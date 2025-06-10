@@ -29,6 +29,7 @@ export default function PlasmicLoaderPage(props: {
       pageRoute={pageMeta.path}
       pageParams={pageMeta.params}
       pageQuery={router.query}
+      authRedirectUri="https://mango-meadow-06c9e1f1e.6.azurestaticapps.net/irm"
     >
       <PlasmicComponent component={pageMeta.displayName} />
     </PlasmicRootProvider>
