@@ -1,5 +1,6 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 import {DoubleNumber} from "./components/DoubleNumber";
+import EmailSender from "./components/EmailSender"; // 👈 default import
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -17,3 +18,11 @@ PLASMIC.registerComponent(DoubleNumber, {
   props: {},
   
 });
+
+
+PLASMIC.registerComponent(EmailSender, {
+  name: "EmailSender",
+  displayName: "EmailSender", // <-- Add this line
+  props: {},
+});
+
