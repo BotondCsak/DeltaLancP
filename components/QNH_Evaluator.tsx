@@ -1,7 +1,7 @@
 // components/QNH_Evaluator.tsx
 import * as React from "react";
 
-export function QNHEvaluator() {
+export default function QNHEvaluator() {
   const [inputText, setInputText] = React.useState("");
   const [evaluation, setEvaluation] = React.useState<string | null>(null);
   const [loading, setLoading] = React.useState(false);

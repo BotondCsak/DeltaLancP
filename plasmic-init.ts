@@ -1,7 +1,7 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 import {DoubleNumber} from "./components/DoubleNumber";
 import EmailSender from "./components/EmailSender"; // 👈 default import
-import { QNHEvaluator } from "./components/QNH_Evaluator";  // <-- Import your new component
+import QNHEvaluator from "./components/QNH_Evaluator";  // <-- Import your new component
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
