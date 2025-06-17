@@ -13,7 +13,7 @@ export default function QNHEvaluator() {
       const response = await fetch("https://deltalancb01.azurewebsites.net/api/EvaluateQNH", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ vendorResponse: inputText }),
+        body: JSON.stringify({ text: inputText }),
       });
       const result = await response.text();
       setEvaluation(result);
