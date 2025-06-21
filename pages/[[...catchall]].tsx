@@ -29,7 +29,7 @@ export default function PlasmicLoaderPage(props: {
       pageRoute={pageMeta.path}
       pageParams={pageMeta.params}
       pageQuery={router.query}
-      authRedirectUri="https://www.deltalanc.com/irm"
+      authRedirectUri="https://www.deltalanc.com/"
     >
       <PlasmicComponent component={pageMeta.displayName} />
     </PlasmicRootProvider>
